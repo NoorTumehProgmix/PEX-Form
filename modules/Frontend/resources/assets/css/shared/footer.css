@@ -1,0 +1,77 @@
+/* =============================================
+   FOOTER
+   ============================================= */
+footer {
+    background: var(--dark);
+    padding: 40px 0 28px;
+}
+
+.footer-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.footer-logo-img {
+    height: 40px;
+    width: auto;
+    max-width: 220px;
+    object-fit: contain;
+}
+
+.footer-copyright {
+    font-size: 0.78rem;
+    color: var(--gray-500);
+}
+
+.footer-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.footer-links a {
+    font-size: 0.82rem;
+    color: var(--gray-500);
+    transition: color var(--transition);
+}
+
+.footer-links a:hover,
+.footer-links a:focus-visible {
+    color: var(--gold);
+}
+
+@media (max-width: 640px) {
+    .footer-inner {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+.footer {
+    background-color: var(--dark);
+    padding: 20px 0;
+}
+
+.footer__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer__logo img {
+    display: block;
+    height: 150px;
+    width: auto;
+}
+@media screen and (max-width: 575.98px) {
+    .footer {
+        padding: 15px 0;
+    }
+
+    .footer__logo img {
+        height: 90px;
+    }
+}

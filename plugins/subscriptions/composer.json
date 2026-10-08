@@ -1,0 +1,22 @@
+{
+    "name": "juzaweb/subscriptions",
+    "description": "Newsletter Subscriptions",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Juzaweb\\Subscriptions\\Providers\\SubscriptionsServiceProvider"
+            ]
+        },
+        "juzaweb": {
+            "name": "Subscriptions",
+            "domain": "subscriptions",
+            "cms_min": "3.3",
+            "version": "1.0"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Juzaweb\\Subscriptions\\": "src/"
+        }
+    }
+}

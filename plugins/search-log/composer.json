@@ -1,0 +1,22 @@
+{
+    "name": "progmix/search-log",
+    "description": "",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Progmix\\SearchLog\\Providers\\SearchLogServiceProvider"
+            ]
+        },
+        "juzaweb": {
+            "name": "Search Logs",
+            "domain": "SearchLog",
+            "cms_min": "3.3",
+            "version": "1.0"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Progmix\\SearchLog\\": "src/"
+        }
+    }
+}

@@ -1,0 +1,63 @@
+:root {
+    /* Colors */
+    --teal-dark: #00525f;
+    --teal-dark-rgb: 0, 82, 95;
+    --teal-mid: #006e7f;
+    --teal-light: #81a9af;
+    --teal-xlight: #d6eaed;
+    --gold: #c9a961;
+    --gold-rgb: 201, 169, 97;
+    --gold-dark: #a8873a;
+    --gold-light: #edd9a3;
+    --white: #ffffff;
+    --white-rgb: 255, 255, 255;
+    --off-white: #f7f9fa;
+    --grayish: #fdecea;
+    --pink: #f5c6c0;
+    --gray-100: #edf1f2;
+    --gray-300: #bec9cc;
+    --gray-500: #7a9099;
+    --gray-700: #3d5560;
+    --dark: #0d2b31;
+    --dark-rgb: 13, 43, 49;
+    --danger: #c0392b;
+    --dark-red: #980202;
+    --success: #0a7a50;
+    --blue: #0a66c2;
+    --green: #25d366;
+    --green-bg: #228802;
+    --cyan-green: #D4F5E9;
+
+    --gold-bg: rgba(201, 169, 97, 0.2);
+    /* Links Colors */
+    --white-link: rgba(255, 255, 255, 0.85);
+    /* Border Color */
+    --black-rgba: 1px solid rgba(255, 255, 255, 0.08);
+    --black-rgba-md: 1px solid rgba(255, 255, 255, 0.12);
+    --font-ar: "Cairo", "Segoe UI", Tahoma, Arial, sans-serif;
+    --font-en: "Cairo", "Segoe UI", Tahoma, Arial, sans-serif;
+    /* --font-en:     'Lato', Arial, sans-serif; */
+    --radius-sm: 6px;
+    --radius-md: 12px;
+    --radius-lg: 20px;
+    /* shadow */
+    --nav-shadow: 0 2px 20px rgba(0, 0, 0, 0.18);
+    --black-shadow-box: 0 12px 24px rgba(0, 0, 0, 0.25);
+    --black-shadow-box-sm: 0 6px 18px rgba(0, 0, 0, 0.15);
+
+    /*  */
+    --shadow-sm: 0 2px 12px rgba(0, 82, 95, 0.08);
+    --shadow-md: 0 6px 28px rgba(0, 82, 95, 0.13);
+    --shadow-lg: 0 16px 48px rgba(0, 82, 95, 0.18);
+    --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --nav-h: 68px;
+    --container-width: 1140px;
+    --gutter-x: 15px;
+
+    /* Spacing */
+    --spacing-sm: 10px;
+    --spacing-md: 20px;
+    --spacing-lg: 30px;
+    --spacing-xl: 40px;
+    --spacing-xxl: 50px;
+}

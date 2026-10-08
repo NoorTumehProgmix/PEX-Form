@@ -1,0 +1,12 @@
+{
+  "plugins/form-builder/src/resources/assets/app.css": {
+    "file": "assets/app-Cgk4xKg0.css",
+    "src": "plugins/form-builder/src/resources/assets/app.css",
+    "isEntry": true
+  },
+  "plugins/form-builder/src/resources/assets/app.js": {
+    "file": "assets/app-tvlRqIDI.js",
+    "src": "plugins/form-builder/src/resources/assets/app.js",
+    "isEntry": true
+  }
+}

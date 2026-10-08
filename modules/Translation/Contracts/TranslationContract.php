@@ -1,0 +1,30 @@
+<?php
+
+
+
+namespace Juzaweb\Translation\Contracts;
+
+use Illuminate\Support\Collection;
+
+interface TranslationContract
+{
+    public function all(): Collection;
+
+    public function getLocalePlugins(): array;
+
+    public function getLocaleThemes(): array;
+
+    public function getByKey(string $key): mixed;
+
+    public function getAlltrans_cms(Collection|string $key, string $locale): array;
+
+    public function allLanguageOrigin(Collection|string $key): array;
+
+    public function allLanguagePublish(Collection|string $key): array;
+
+    public function allLanguage(Collection|string $key): array;
+
+    public function originPath(Collection|string $key, string $path = ''): string;
+
+    public function publishPath(Collection|string $key, $path = ''): string;
+}

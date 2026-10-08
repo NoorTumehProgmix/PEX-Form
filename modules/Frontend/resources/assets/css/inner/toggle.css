@@ -1,0 +1,90 @@
+.toggle-title {
+    position: relative;
+    cursor: pointer;
+    font-size: 1.875rem;
+    font-weight: 500;
+    color: var(--gray-color);
+    display: flex   ;
+    align-items: center;
+    gap: 10px;
+    transition:all 0.3s linear;
+}
+
+.toggle-title::before{
+    width: 25px;
+    height: 25px;
+    border: 1px solid var(--med-gray-color);
+    border-radius: 50%;
+    margin-top: 2px;
+    position: relative;
+    content: "\e91a";
+    font-family: 'icomoon';
+    color: var(--med-gray-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition:all 0.3s linear;
+    font-size: 12px;
+}
+.toggle-title.active::before{
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+    content: "\eb0f";
+}
+.toggle-content {
+    display: none;
+}
+.toggle-title.active {
+    color: var(--primary-color);
+}
+.toggle-content{
+    margin-top: 20px;
+    margin-bottom: 0;
+    padding-left: 30px;
+}
+.toggle-content,
+.toggle-content > * {
+    font-size: var(--desc-font-size);
+    line-height: var(--desc-line-height);
+    font-weight: var(--desc-font-weight);
+    color: var(--gray-color);
+}
+.toggle-content p,
+.toggle-content li {
+    margin: 10px 0;
+}
+.toggle-content :first-child {
+    margin-top: 0;
+}
+.toggle-content :last-child {
+    margin-bottom: 0;
+}
+@media screen and (max-width: 991.98px) {
+    .toggle-title {
+        font-size: 1.5rem;
+        line-height: 1.875rem;
+    }
+}
+@media screen and (max-width: 767.98px) {
+    .toggle-title {
+        font-size: 1.25rem;
+        line-height: 1.5rem;
+    }
+    .toggle-title:before{
+        width: 20px;
+        height: 20px;
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 575.98px) {
+    .toggle-title {
+        font-size: 1.125rem;
+        line-height: 1.375rem;
+    }
+}
+@media screen and (max-width: 475.98px) {
+    .toggle-title {
+        font-size: 1rem;
+        line-height: 1.25rem;
+    }
+}

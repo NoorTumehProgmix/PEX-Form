@@ -1,0 +1,29 @@
+.breadcrumbs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.breadcrumbs li:not(:last-child)::after {
+    content: "/";
+    color: var(--secondary-color);
+    padding-left: 8px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+[dir="rtl"] .breadcrumbs li:not(:last-child)::after {
+    content: "\\";
+}
+
+.breadcrumbs li .item {
+    color: var(--secondary-color);
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.3s linear;
+}
+
+.breadcrumbs li a.item:hover,
+.breadcrumbs li .item.active {
+    color: var(--primary-color);
+}

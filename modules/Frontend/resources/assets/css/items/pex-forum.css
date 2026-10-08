@@ -1,0 +1,583 @@
+
+
+/* =============================================
+   PROGRAM – Timeline
+   ============================================= */
+
+
+   /* .timeline {
+    list-style: none;
+    max-width: 860px;
+    margin: 0 auto;
+    position: relative;
+    padding-inline-start: 0;
+  }
+  
+  .timeline-item {
+    display: grid;
+    grid-template-columns: 116px 1fr;
+    gap: 20px;
+    position: relative;
+    padding-bottom: 22px;
+  }
+   */
+  /* .timeline-item::before { */
+    /* الخط الرأسي */
+    /* content: '';
+    position: absolute;
+    top: 30px;
+    bottom: -4px;
+    inset-inline-start: 130px;
+    width: 2px;
+    background: var(--gray-100);
+  }
+  
+  .timeline-item:last-child::before {
+    display: none;
+  }
+  
+  .timeline-time {
+    font-weight: 800;
+    color: var(--teal-mid);
+    font-size: 0.9rem;
+    font-variant-numeric: tabular-nums;
+    direction: ltr;
+    text-align: start;
+    padding-top: 16px;
+    white-space: nowrap;
+  }
+  
+  .timeline-body {
+    position: relative;
+    background: var(--white);
+    border: 1px solid var(--gray-100);
+    border-radius: var(--radius-md);
+    padding: 16px 20px;
+    box-shadow: var(--shadow-sm);
+    transition: box-shadow var(--transition), transform var(--transition);
+  }
+  
+  .timeline-body:hover {
+    box-shadow: var(--shadow-md);
+    transform: translateY(-2px);
+  }
+  
+  .timeline-item::after { */
+    /* النقطة على الخط */
+    /* content: '';
+    position: absolute;
+    top: 24px;
+    inset-inline-start: 124px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: var(--white);
+    border: 3px solid var(--gold);
+    z-index: 1;
+  }
+  
+  .timeline-item.is-session::after {
+    border-color: var(--teal-dark);
+    background: var(--teal-dark);
+  }
+  
+  .timeline-item.is-break::after {
+    border-color: var(--teal-light);
+  }
+  
+  .timeline-title {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--dark);
+    line-height: 1.5;
+  }
+  
+  .timeline-item.is-break .timeline-title {
+    color: var(--gray-700);
+    font-weight: 600;
+  }
+  
+  .timeline-meta {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  
+  .timeline-row {
+    font-size: 0.85rem;
+    color: var(--gray-700);
+  }
+  
+  .timeline-row .lbl {
+    color: var(--teal-mid);
+    font-weight: 700;
+  }
+  
+  .timeline-note {
+    font-size: 0.8rem;
+    color: var(--gray-500);
+    font-style: italic;
+  }
+  
+  .tag-chair {
+    display: inline-block;
+    background: var(--teal-xlight);
+    color: var(--teal-dark);
+    font-weight: 700;
+    font-size: 0.8rem;
+    padding: 2px 10px;
+    border-radius: 20px;
+  }
+  
+  @media (max-width: 640px) {
+    .timeline-item {
+      grid-template-columns: 92px 1fr;
+      gap: 12px;
+    }
+  
+    .timeline-item::before {
+      inset-inline-start: 104px;
+    }
+  
+    .timeline-item::after {
+      inset-inline-start: 98px;
+    }
+  
+    .timeline-time {
+      font-size: 0.8rem;
+    }
+  } */
+  
+  /* =============================================
+     CAROUSEL (المتحدثون + الرعاية)
+     ============================================= */
+/*   
+  
+  .carousel {
+    position: relative;
+    display: flex;
+    align-items: stretch;
+    gap: 8px;
+  }
+  
+  .carousel-track {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    padding: 8px 4px 18px;
+    flex: 1;
+    scrollbar-width: thin;
+    scrollbar-color: var(--teal-light) transparent;
+  }
+  
+  .carousel-track::-webkit-scrollbar {
+    height: 8px;
+  }
+  
+  .carousel-track::-webkit-scrollbar-thumb {
+    background: var(--teal-light);
+    border-radius: 8px;
+  }
+  
+  .carousel-track::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  .carousel-arrow {
+    flex-shrink: 0;
+    align-self: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: 1px solid var(--gray-100);
+    background: var(--white);
+    color: var(--teal-dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--shadow-sm);
+    transition: all var(--transition);
+    z-index: 2;
+  }
+  
+  .carousel-arrow:hover:not(:disabled),
+  .carousel-arrow:focus-visible:not(:disabled) {
+    background: var(--teal-dark);
+    color: var(--white);
+    transform: scale(1.06);
+    border-color: var(--teal-dark);
+  }
+  
+  .carousel-arrow:disabled {
+    opacity: 0.35;
+    cursor: default;
+  }
+  
+  .carousel-arrow svg {
+    width: 20px;
+    height: 20px;
+  }
+  
+  @media (max-width: 680px) {
+    .carousel-arrow {
+      display: none;
+    }
+  }
+  
+  @media (prefers-reduced-motion: reduce) {
+    .carousel-track {
+      scroll-behavior: auto;
+    }
+  }
+  
+  .carousel-dots {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 12px;
+  }
+  
+  .carousel-dot {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    border: none;
+    background: var(--gray-300);
+    padding: 0;
+    transition: all var(--transition);
+  }
+  
+  .carousel-dot.active {
+    background: var(--gold);
+    width: 26px;
+    border-radius: 6px;
+  }
+  
+  
+  
+  /* --- المتحدثون: مجموعات حسب الجلسات --- */
+  /* .speaker-sessions {
+    display: flex;
+    flex-direction: column;
+    gap: 54px;
+    max-width: 1040px;
+    margin: 0 auto;
+  }
+  
+  .session-block {
+    min-width: 0;
+    width: 100%;
+  }
+  
+  .session-head {
+    text-align: center;
+    margin-bottom: 24px;
+  }
+  
+  .session-order {
+    display: inline-block;
+    background: var(--gold-light);
+    color: var(--gold-dark);
+    font-size: 0.72rem;
+    font-weight: 800;
+    padding: 3px 14px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    letter-spacing: 0.02em;
+  }
+  
+  .session-title {
+    font-size: clamp(1.15rem, 2.4vw, 1.5rem);
+    font-weight: 800;
+    color: var(--teal-dark);
+  }
+  
+  .session-subtitle {
+    font-size: 0.95rem;
+    color: var(--gray-500);
+    margin-top: 4px;
+  }
+  
+  /* مدير الجلسة: بطاقة مميزة ومنفصلة في المنتصف */
+  /* .chair-row {
+    display: flex;
+    justify-content: center;
+  } */
+
+  /* .chair-row .speaker-card.is-chair {
+    flex: 0 0 auto;
+    width: 300px;
+    max-width: 300px;
+  }
+  
+  .speaker-card.is-chair {
+    border: 2px solid var(--gold);
+    box-shadow: var(--shadow-md);
+    background: linear-gradient(180deg, #FFFDF6 0%, var(--white) 60%);
+  }
+  
+  .speaker-card.is-chair .speaker-avatar {
+    border-color: var(--gold);
+  }
+  
+  /* فاصل بصري بين مدير الجلسة والمتحدثين */
+  /* .session-divider {
+    width: 64px;
+    height: 2px;
+    background: var(--gray-100);
+    margin: 24px auto 22px;
+    position: relative;
+  }
+  
+  .session-divider::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--gold);
+  }
+  
+  /* شبكة المتحدثين — 3 أو 4 في الصف على الكمبيوتر */
+  /* .session-speakers {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    min-width: 0;
+  }
+  
+  /* شارة البطاقة (مدير الجلسة / خطاب ملهم) */
+  /* .card-badge {
+    align-self: center;
+    font-size: 0.72rem;
+    font-weight: 800;
+    padding: 3px 14px;
+    border-radius: 20px;
+    margin-bottom: 12px;
+  }
+  
+  .badge-chair {
+    background: var(--teal-dark);
+    color: var(--white);
+  }
+  
+  .badge-talk {
+    background: var(--gold);
+    color: var(--teal-dark);
+  }
+  
+  /* خطاب ملهم: بطاقة مستقلة ومميزة في المنتصف */
+  /* .talk-row {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .speaker-card.is-talk {
+    flex: 0 0 auto;
+    width: 340px;
+    max-width: 340px;
+    border: 2px solid var(--gold);
+    box-shadow: var(--shadow-md);
+    background: linear-gradient(180deg, #FFFBEF 0%, var(--white) 60%);
+  }
+  
+  /* على الهاتف: سكرول أفقي باللمس لكل جلسة */
+  /* @media (max-width: 640px) {
+    .session-speakers {
+      display: flex;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      gap: 14px;
+      padding: 4px 2px 14px;
+      scrollbar-width: thin;
+      scrollbar-color: var(--teal-light) transparent;
+    }
+  
+    .session-speakers::-webkit-scrollbar {
+      height: 7px;
+    }
+  
+    .session-speakers::-webkit-scrollbar-thumb {
+      background: var(--teal-light);
+      border-radius: 8px;
+    }
+  
+    .session-speakers .speaker-card {
+      flex: 0 0 76vw;
+      max-width: 76vw;
+      scroll-snap-align: start;
+    }
+  
+    .chair-row .speaker-card.is-chair,
+    .speaker-card.is-talk {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+  
+  /* Sponsor card */
+  /* .sponsor-card {
+    scroll-snap-align: start;
+    flex: 0 0 340px;
+    max-width: 340px;
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    transition: transform var(--transition), box-shadow var(--transition);
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--gray-100);
+  }
+  
+  .sponsor-card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-md);
+  }
+  
+  .sponsor-card.is-featured {
+    border: 2px solid var(--gold);
+  }
+  
+  .sponsor-head {
+    padding: 26px 24px 20px;
+    text-align: center;
+    position: relative;
+  }
+  
+  .sponsor-head.diamond {
+    background: linear-gradient(135deg, #B9D6DB 0%, #E7F1F3 100%);
+  }
+  
+  .sponsor-head.gold {
+    background: linear-gradient(135deg, #C9A961 0%, #EDD9A3 100%);
+  }
+  
+  .sponsor-head.silver {
+    background: linear-gradient(135deg, #9EB3B8 0%, #D0DDE0 100%);
+  }
+  
+  .sponsor-name {
+    font-size: 1.15rem;
+    font-weight: 800;
+    color: var(--teal-dark);
+  }
+  
+  .sponsor-en {
+    font-size: 0.75rem;
+    color: var(--gray-700);
+    margin-top: 2px;
+    letter-spacing: 0.04em;
+  }
+  
+  .sponsor-price {
+    font-size: 1.7rem;
+    font-weight: 900;
+    color: var(--teal-dark);
+    margin-top: 10px;
+  }
+  
+  .sponsor-price .cur {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--gold-dark);
+    margin-inline-start: 4px;
+  }
+  
+  .sponsor-ribbon {
+    position: absolute;
+    top: 12px;
+    inset-inline-end: 12px;
+    background: var(--gold-dark);
+    color: var(--white);
+    font-size: 0.68rem;
+    font-weight: 800;
+    padding: 3px 10px;
+    border-radius: 20px;
+  }
+  
+  .sponsor-body {
+    padding: 22px 24px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+  
+  .sponsor-features {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex: 1;
+  }
+  
+  .sponsor-features li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 0.86rem;
+    color: var(--gray-700);
+    line-height: 1.55;
+  }
+  
+  .sponsor-features li .check {
+    width: 18px;
+    height: 18px;
+    margin-top: 2px;
+    background: var(--teal-xlight);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+  
+  .sponsor-features li .check svg {
+    width: 10px;
+    height: 10px;
+    color: var(--teal-dark);
+  }
+  
+  .btn-sponsor {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background: var(--teal-dark);
+    color: var(--white);
+    padding: 12px 20px;
+    border-radius: var(--radius-sm);
+    font-weight: 700;
+    font-size: 0.9rem;
+    border: none;
+    transition: all var(--transition);
+    box-shadow: 0 4px 16px rgba(0, 82, 95, 0.25);
+    width: 100%;
+  }
+  
+  .btn-sponsor:hover,
+  .btn-sponsor:focus-visible {
+    background: var(--teal-mid);
+    transform: translateY(-2px);
+  }
+  
+  .btn-sponsor svg {
+    width: 16px;
+    height: 16px;
+  }
+  
+  @media (max-width: 640px) {
+    .sponsor-card {
+      flex-basis: 84vw;
+      max-width: 84vw;
+    } */
+  /* } */
+  

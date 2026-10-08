@@ -1,0 +1,19 @@
+{
+    "name": "progmix/popup-messages",
+    "description": "Create popup-messages for Website",
+    "extra": {
+        "juzaweb": {
+            "providers": [
+                "Progmix\\PopupMessages\\Providers\\PopupMessagesServiceProvider"
+            ],
+            "name": "Popup Messages",
+            "domain": "popmes",
+            "version": "1.0.2"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Progmix\\PopupMessages\\": "src/"
+        }
+    }
+}

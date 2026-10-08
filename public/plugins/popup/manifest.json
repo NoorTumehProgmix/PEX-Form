@@ -1,0 +1,7 @@
+{
+  "plugins/popup/src/resources/assets/js/app.js": {
+    "file": "assets/app-w40geAFS.js",
+    "isEntry": true,
+    "src": "plugins/popup/src/resources/assets/js/app.js"
+  }
+}

@@ -1,0 +1,35 @@
+.icon {
+    width: 16px;
+    height: 16px;
+    color: var(--gold);
+    flex-shrink: 0;
+}
+
+.btn-primary .icon {
+    color: var(--teal-dark);
+}
+
+.btn-primary .icon {
+    width: 16px;
+    height: 16px;
+    color: var(--teal-dark);
+    flex-shrink: 0;
+}
+
+.btn-secondary .icon {
+    color: var(--white);
+}
+
+.icon--lg {
+    width: 24px;
+    height: 22px;
+    font-size: x-large;
+}
+
+.icon-white {
+    color: var(--white);
+}
+
+.icon--teal-dark {
+    color: var(--teal-dark);
+}

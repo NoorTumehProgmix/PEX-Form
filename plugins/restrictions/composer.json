@@ -1,0 +1,22 @@
+{
+    "name": "progmix/restrictions",
+    "description": "IP Restrictions",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Progmix\\Restrictions\\Providers\\RestrictionsServiceProvider"
+            ]
+        },
+        "juzaweb": {
+            "name": "Restrictions",
+            "domain": "restrictions",
+            "cms_min": "3.3",
+            "version": "1.0"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Progmix\\Restrictions\\": "src/"
+        }
+    }
+}

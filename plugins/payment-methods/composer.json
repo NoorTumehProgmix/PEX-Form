@@ -1,0 +1,30 @@
+{
+    "name": "progmix/payment-methods",
+    "description": "",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Progmix\\PaymentMethods\\Providers\\PaymentMethodsServiceProvider"
+            ]
+        },
+        "juzaweb": {
+            "name": "Payment Methods",
+            "domain": "paymentMethods",
+            "cms_min": "3.3",
+            "version": "1.0"
+        }
+    },
+    "require": {
+        "league/omnipay": "^3",
+        "omnipay/paypal": "^3.0",
+        "omnipay/stripe": "^3.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Progmix\\PaymentMethods\\": "src/"
+        },
+        "files": [
+            "helpers/helpers.php"
+        ]
+    }
+}

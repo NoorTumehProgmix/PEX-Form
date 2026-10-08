@@ -1,0 +1,58 @@
+<?php
+
+
+
+namespace Juzaweb\DevTool\Commands;
+
+use Illuminate\Console\Command;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Validator;
+use Juzaweb\CMS\Models\User;
+
+class MakeAdminCommand extends Command
+{
+    protected $signature = 'juzacms:make-admin';
+
+    protected array $user;
+
+    public function handle()
+    {
+        $this->user['name'] = $this->ask('Full Name?');
+        $this->user['email'] = $this->ask('Email?');
+        $this->user['password'] = $this->ask('Password?');
+
+        $validator = Validator::make(
+            $this->user,
+            [
+                'name' => 'required|max:150',
+                'email' => 'required|email|max:150',
+                'password' => 'required|max:32|min:6',
+            ],
+            [],
+            [
+                'name' => trans_cms('cms::app.name'),
+                'email' => trans_cms('cms::app.email'),
+                'password' => trans_cms('cms::app.password'),
+            ]
+        );
+
+        if ($validator->fails()) {
+            $this->error($validator->errors()->messages()[0]);
+            exit(1);
+        }
+
+        DB::beginTransaction();
+        try {
+            $model = new User();
+            $model->fill($this->user);
+            $model->password = Hash::make($this->user['password']);
+            $model->is_admin = 1;
+            $model->save();
+            DB::commit();
+        } catch (\Exception $e) {
+            DB::rollBack();
+            throw $e;
+        }
+    }
+}

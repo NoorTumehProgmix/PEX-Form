@@ -1,0 +1,46 @@
+<?php
+
+return [
+    'language'         => 'اللغة',
+    'home'             => 'الرئيسية',
+    'powered_by'       => 'تصميم وتطوير',
+    'search'           => 'البحث',
+    'search_for'       => 'البحث عن..',
+    'no_search_result' => 'لا يوجد نتائج مطابقة للبحث.',
+    'email'          => 'البريد الإلكتروني',
+    'phone'          => 'الهاتف',
+    'address'          => 'العنوان',
+    'website'          => 'الموقع الإلكتروني',
+    'share_linkedin' =>'مشاركة على LinkedIn',
+    'share_whatsapp' =>'مشاركة على WhatsApp',
+    'map_description' =>'عرض الاتجاهات — فندق الميلينيوم فلسطين، رام الله',
+    'register_now' => 'سجل الآن في الملتقى',
+    'register' => 'التسجيل في الملتقى',
+    'copyright' => '© 2026 بورصة فلسطين. جميع الحقوق محفوظة.',
+    'day' => 'يوم',
+    'hour' => 'ساعة',
+    'minute' => 'دقيقة',
+    'second' => 'ثانية',
+    'until_launch' => 'حتى انطلاق الملتقى',
+
+    // نصوص نافذة التعريف والأجندة/المتحدثين/الرعاة (نُقلت من main.js)
+    'view_profile_aria' => 'عرض تعريف :name — :role',
+    'chair_tag' => 'مدير الجلسة',
+    'profile_bio_label' => 'نبذة',
+    'profile_participation_label' => 'مشاركته في الملتقى',
+    'profile_session_title' => 'المشاركون في الجلسة نفسها',
+    'profile_prev_person' => 'الشخص السابق',
+    'profile_next_person' => 'الشخص التالي',
+    'profile_close' => 'إغلاق النافذة',
+    'agenda_details_toggle' => 'تفاصيل الجلسة',
+    'agenda_coming_soon' => 'سيتم الإعلان عن برنامج الملتقى قريباً...',
+    'agenda_list_aria' => 'الجدول الزمني للملتقى',
+    'sponsors_coming_soon' => 'سيتم الإعلان عن قائمة الرعاة قريباً...',
+    'sponsors_category_coming_soon' => 'سيتم الإعلان عن الرعاة قريبًا',
+    'speakers_coming_soon' => 'سيتم الإعلان عن قائمة المتحدثين قريباً...',
+
+    // فئات الرعاة (sponsorship.blade.php / get_sponsor_categories)
+    'sponsor_tier_silver' => 'الرعاة الفضيون',
+    'sponsor_tier_gold' => 'الرعاة الذهبيون',
+    'sponsor_tier_diamond' => 'الرعاة الماسيون',
+];

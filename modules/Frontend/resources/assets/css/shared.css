@@ -1,0 +1,9 @@
+@import "./shared/vars.css";
+@import "./shared/base.css";
+@import "./shared/grids.css";
+@import "../fonts/Cairo/stylesheet.css";
+@import "./shared/main-classes.css";
+@import "./shared/footer.css";
+@import "./items/components/shared/navbar.css";
+@import "./items/components/shared/section.css";
+@import "./shared/icons.css";

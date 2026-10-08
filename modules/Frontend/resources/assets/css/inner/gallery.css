@@ -1,0 +1,43 @@
+.gallery-item {
+    position: relative;
+    display: block;
+    border: 1px solid var(--light-gray);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+}
+
+.gallery-item:not(.full) img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1/0.8;
+    object-fit: cover;
+    transition: all 0.3s ease-in-out;
+}
+
+.gallery-item.full img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+/*.gallery-item:not(.full):hover img {*/
+/*    transform: scale(1.1);*/
+/*}*/
+
+.image-anime:after {
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 0%;
+    left: 50%;
+    top: 50%;
+    background-color: rgba(255, 255, 255, .3);
+    transform: translate(-50%, -50%) rotate(-45deg);
+    z-index: 1;
+}
+
+.image-anime:hover:after {
+    height: 250%;
+    transition: all 600ms linear;
+    background-color: transparent;
+}

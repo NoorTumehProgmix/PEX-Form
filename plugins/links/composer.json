@@ -1,0 +1,22 @@
+{
+    "name": "progmix/links",
+    "description": "General Links",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Progmix\\Links\\Providers\\LinksServiceProvider"
+            ]
+        },
+        "juzaweb": {
+            "name": "General Links",
+            "domain": "links",
+            "cms_min": "3.3",
+            "version": "1.0"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Progmix\\Links\\": "src/"
+        }
+    }
+}

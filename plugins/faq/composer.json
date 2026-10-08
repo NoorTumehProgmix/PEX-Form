@@ -1,0 +1,19 @@
+{
+    "name": "juzaweb/faq",
+    "description": "Create FAQ for Website",
+    "extra": {
+        "juzaweb": {
+            "providers": [
+                "Juzaweb\\FAQ\\Providers\\FAQServiceProvider"
+            ],
+            "name": "FAQ",
+            "domain": "faq",
+            "version": "1.0.2"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Juzaweb\\FAQ\\": "src/"
+        }
+    }
+}

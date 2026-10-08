@@ -1,0 +1,8 @@
+{
+  "plugins/popup-messages/src/resources/assets/js/app.js": {
+    "file": "assets/app-l0sNRNKZ.js",
+    "name": "app",
+    "src": "plugins/popup-messages/src/resources/assets/js/app.js",
+    "isEntry": true
+  }
+}

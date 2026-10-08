@@ -1,0 +1,54 @@
+{
+    "name": "progmix/sitemap",
+    "description": "Laravelium Sitemap package for Laravel.",
+    "homepage": "https://laravelium.com",
+    "keywords": [
+        "laravelium",
+        "laravel",
+        "php",
+        "sitemap",
+        "generator",
+        "xml",
+        "html",
+        "google-news"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Rumen Damyanov",
+            "email": "r@alfamatter.com",
+            "role": "Developer",
+            "homepage": "https://darumen.com"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/Laravelium/laravel-sitemap/issues",
+        "source": "https://github.com/Laravelium/laravel-sitemap",
+        "wiki": "https://github.com/Laravelium/laravel-sitemap/wiki"
+    },
+    "require": {
+        "php": "^8.1",
+        "illuminate/support": "^12.0",
+        "illuminate/filesystem": "^12.0"
+    },
+    "require-dev": {
+        "laravel/framework": "^12.0",
+        "phpunit/phpunit": "^11.0",
+        "orchestra/testbench-core": "^6.0",
+        "php-coveralls/php-coveralls": "^2.2"
+    },
+    "autoload": {
+        "psr-0": {
+            "Laravelium\\Sitemap": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Laravelium\\Sitemap\\SitemapServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

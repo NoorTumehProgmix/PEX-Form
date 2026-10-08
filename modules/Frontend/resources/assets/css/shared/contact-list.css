@@ -1,0 +1,30 @@
+
+.contact-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.contact-list li .item {
+    display: block;
+    font-size: 1rem;
+    font-weight: 300;
+    color: var(--med-gray-color);
+    transition: color 0.3s ease;
+}
+
+.contact-list li a.item:hover,
+.contact-list.large-contact-list li a.item:hover {
+    color: var(--primary-color);
+}
+
+/* large contact list */
+.contact-list.large-contact-list li .item {
+    font-size: var(--desc-font-size);
+    line-height: var(--desc-line-height);
+    color: var(--gray-color);
+    font-weight: 500;
+}
+.contact-list.large-contact-list li:not(:last-child) {
+    margin-bottom: 10px;
+}

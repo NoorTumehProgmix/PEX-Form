@@ -1,0 +1,46 @@
+<?php
+
+return [
+    'language'         => 'Language',
+    'home'             => 'Home',
+    'powered_by'       => 'Powered By',
+    'search'           => 'Search',
+    'search_for'       => 'Search for..',
+    'no_search_result' => 'There are no results for your search.',
+    'email'          => 'Email',
+    'phone'          => 'Phone',
+    'address'          => 'Address',
+    'website'          => 'Website',
+    'share_linkedin' =>'Share on LinkedIn',
+    'share_whatsapp' =>'Share on WhatsApp',
+    'map_description' =>'View directions — Hotel Millennium Palestine, Ramallah',
+    'register_now' => 'Register Now for the PEX Forum',
+    'register' => 'Register for the PEX Forum',
+    'copyright' => '© 2026 Palestine Exchange. All rights reserved.',
+    'day' => 'Day',
+    'hour' => 'Hour',
+    'minute' => 'Minute',
+    'second' => 'Second',
+    'until_launch' => 'Until the launch of the PEX Forum',
+
+    // Profile modal + agenda/speakers/sponsors strings (moved out of main.js)
+    'view_profile_aria' => 'View profile: :name — :role',
+    'chair_tag' => 'Session Chair',
+    'profile_bio_label' => 'Bio',
+    'profile_participation_label' => 'Participation in the Forum',
+    'profile_session_title' => 'Participants in This Session',
+    'profile_prev_person' => 'Previous Person',
+    'profile_next_person' => 'Next Person',
+    'profile_close' => 'Close Window',
+    'agenda_details_toggle' => 'Session Details',
+    'agenda_coming_soon' => 'The forum agenda will be announced soon...',
+    'agenda_list_aria' => 'Forum Schedule',
+    'sponsors_coming_soon' => 'The sponsors list will be announced soon...',
+    'sponsors_category_coming_soon' => 'Sponsors will be announced soon',
+    'speakers_coming_soon' => 'The speakers list will be announced soon...',
+
+    // Sponsor tiers (sponsorship.blade.php / get_sponsor_categories)
+    'sponsor_tier_silver' => 'Silver Sponsors',
+    'sponsor_tier_gold' => 'Gold Sponsors',
+    'sponsor_tier_diamond' => 'Diamond Sponsors',
+];

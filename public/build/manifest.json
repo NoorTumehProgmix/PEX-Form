@@ -1,0 +1,33 @@
+{
+  "modules/Backend/resources/assets/css/app.css": {
+    "file": "assets/app-DiNDC0l4.css",
+    "src": "modules/Backend/resources/assets/css/app.css",
+    "isEntry": true
+  },
+  "modules/Backend/resources/assets/fonts/fontawesome-webfont.eot": {
+    "file": "assets/fontawesome-webfont-G5YE5S7X.eot",
+    "src": "modules/Backend/resources/assets/fonts/fontawesome-webfont.eot"
+  },
+  "modules/Backend/resources/assets/fonts/fontawesome-webfont.svg": {
+    "file": "assets/fontawesome-webfont-D13rzr4g.svg",
+    "src": "modules/Backend/resources/assets/fonts/fontawesome-webfont.svg"
+  },
+  "modules/Backend/resources/assets/fonts/fontawesome-webfont.ttf": {
+    "file": "assets/fontawesome-webfont-CQDK8MU3.ttf",
+    "src": "modules/Backend/resources/assets/fonts/fontawesome-webfont.ttf"
+  },
+  "modules/Backend/resources/assets/fonts/fontawesome-webfont.woff": {
+    "file": "assets/fontawesome-webfont-CDK5bt4p.woff",
+    "src": "modules/Backend/resources/assets/fonts/fontawesome-webfont.woff"
+  },
+  "modules/Backend/resources/assets/fonts/fontawesome-webfont.woff2": {
+    "file": "assets/fontawesome-webfont-B-jkhYfk.woff2",
+    "src": "modules/Backend/resources/assets/fonts/fontawesome-webfont.woff2"
+  },
+  "modules/Backend/resources/assets/js/app.js": {
+    "file": "assets/app-CNSqNjoN.js",
+    "name": "app",
+    "src": "modules/Backend/resources/assets/js/app.js",
+    "isEntry": true
+  }
+}

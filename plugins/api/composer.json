@@ -1,0 +1,22 @@
+{
+    "name": "progmix/api",
+    "description": "",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Progmix\\Api\\Providers\\ApiServiceProvider"
+            ]
+        },
+        "juzaweb": {
+            "name": "API",
+            "domain": "api",
+            "cms_min": "3.3",
+            "version": "1.0"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Progmix\\Api\\": "src/"
+        }
+    }
+}

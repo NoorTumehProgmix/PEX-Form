@@ -1,0 +1,13 @@
+{
+  "plugins/api/src/resources/assets/app.css": {
+    "file": "assets/app-BRqa3B6M.css",
+    "src": "plugins/api/src/resources/assets/app.css",
+    "isEntry": true
+  },
+  "plugins/api/src/resources/assets/app.js": {
+    "file": "assets/app-CwLKN9mt.js",
+    "name": "app",
+    "src": "plugins/api/src/resources/assets/app.js",
+    "isEntry": true
+  }
+}

@@ -1,0 +1,4 @@
+'$COLUMN$' => [
+                'label' => trans_cms('$MODULE_DOMAIN$::content.$COLUMN$'),
+                'formatter' => [$this, 'rowActionsFormatter'],
+            ],

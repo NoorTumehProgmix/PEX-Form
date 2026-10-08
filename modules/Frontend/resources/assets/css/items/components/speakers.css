@@ -1,0 +1,158 @@
+/* =============================================
+   SPEAKERS GRID (قائمة موحّدة)
+   ============================================= */
+.speakers {
+    padding: 90px 0;
+    background: var(--white);
+}
+
+/* Speaker card */
+.speaker-card {
+    scroll-snap-align: start;
+    flex: 0 0 264px;
+    max-width: 264px;
+    background: var(--white);
+    border: 1px solid var(--gray-100);
+    border-radius: var(--radius-lg);
+    padding: 26px 22px;
+    text-align: center;
+    box-shadow: var(--shadow-sm);
+    transition:
+        transform var(--transition),
+        box-shadow var(--transition);
+    display: flex;
+    flex-direction: column;
+}
+
+.speaker-card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-md);
+}
+
+.speaker-avatar {
+    width: 92px;
+    height: 92px;
+    border-radius: 50%;
+    margin: 0 auto 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.7rem;
+    font-weight: 800;
+    color: var(--white);
+    background: linear-gradient(135deg, var(--teal-dark), var(--teal-mid));
+    border: 3px solid var(--gold-light);
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+/* عند وجود صورة رسمية */
+.speaker-avatar.has-photo {
+    background: none;
+}
+
+.speaker-avatar.has-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+}
+
+.speaker-name {
+    font-size: 1.05rem;
+    font-weight: 800;
+    color: var(--teal-dark);
+}
+
+.speaker-role {
+    font-size: 0.82rem;
+    color: var(--gray-500);
+    font-weight: 600;
+    min-height: 2.4em;
+    margin-top: 12px;
+}
+
+.speaker-sessions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    justify-content: center;
+    margin-bottom: 12px;
+}
+
+.speaker-session-tag {
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: var(--gold-dark);
+    background: var(--gold-light);
+    border-radius: 20px;
+    padding: 2px 9px;
+}
+
+.speaker-bio {
+    font-size: 0.82rem;
+    color: var(--gray-700);
+    line-height: 1.65;
+    text-align: start;
+    margin-top: auto;
+}
+
+@media (max-width: 640px) {
+    .speaker-card {
+        flex-basis: 82vw;
+        max-width: 82vw;
+    }
+}
+
+.speakers-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-md);
+}
+
+.speakers-grid .speaker-card {
+    flex: initial;
+    max-width: none;
+    width: auto;
+}
+
+@media (max-width: 1000px) {
+    .speakers-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 760px) {
+    .speakers-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 560px) {
+    .speakers-grid {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        gap: 14px;
+        padding: 4px 2px 14px;
+        scrollbar-width: thin;
+        scrollbar-color: var(--teal-light) transparent;
+    }
+
+    .speakers-grid::-webkit-scrollbar {
+        height: 7px;
+    }
+
+    .speakers-grid::-webkit-scrollbar-thumb {
+        background: var(--teal-light);
+        border-radius: 8px;
+    }
+
+    .speakers-grid .speaker-card {
+        flex: 0 0 72vw;
+        max-width: 72vw;
+        scroll-snap-align: start;
+    }
+}

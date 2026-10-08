@@ -1,0 +1,22 @@
+@import url("./vendor.css");
+@import url("./backend.css");
+@import url("./widget.css");
+@import url("./media.css");
+@import url("./menu.css");
+@import url("./page.css");
+@import url("./customs.css");
+@import url("./theme.css");
+@import url("./appearance/editor.css");
+@import url("./swagger.css");
+
+:root {
+    --primary-color: #162035;
+    --secondary-color: #b9a076;
+    --light-primary: #9a9a9a;
+    --light-primary-2: #d3d3d3;
+    --light-gray: #f9f9f9;
+    --border-color: #f1f1f2;
+    --box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.03);
+    --border-radius: 10px;
+    --border-radius-med: 20px;
+}

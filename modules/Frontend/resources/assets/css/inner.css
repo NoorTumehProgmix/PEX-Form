@@ -1,0 +1,6 @@
+@import "shared.css";
+@import "./inner/inner-page.css";
+@import "./inner/pagination.css";
+@import "./inner/breadcrumbs.css";
+@import "./shared/magnific-popup.css";
+@import "./inner/toggle.css";

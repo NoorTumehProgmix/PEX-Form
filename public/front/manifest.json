@@ -1,0 +1,109 @@
+{
+  "_jquery-BvxTx_lq.js": {
+    "file": "assets/jquery-BvxTx_lq.js",
+    "name": "jquery"
+  },
+  "_nav-BuPnHObe.js": {
+    "file": "assets/nav-BuPnHObe.js",
+    "name": "nav",
+    "imports": [
+      "_jquery-BvxTx_lq.js"
+    ]
+  },
+  "_register-form-Cp9kZKV3.js": {
+    "file": "assets/register-form-Cp9kZKV3.js",
+    "name": "register-form",
+    "imports": [
+      "_nav-BuPnHObe.js",
+      "_jquery-BvxTx_lq.js"
+    ]
+  },
+  "modules/Frontend/resources/assets/css/home.css": {
+    "file": "assets/home-9SHeBHQf.css",
+    "src": "modules/Frontend/resources/assets/css/home.css",
+    "isEntry": true
+  },
+  "modules/Frontend/resources/assets/css/inner.css": {
+    "file": "assets/inner-hvra-R7L.css",
+    "src": "modules/Frontend/resources/assets/css/inner.css",
+    "isEntry": true
+  },
+  "modules/Frontend/resources/assets/css/register.css": {
+    "file": "assets/register-DaBqVjw9.css",
+    "src": "modules/Frontend/resources/assets/css/register.css",
+    "isEntry": true
+  },
+  "modules/Frontend/resources/assets/fonts/Cairo/Cairo-Black.woff2": {
+    "file": "assets/Cairo-Black-DidUcbRR.woff2",
+    "src": "modules/Frontend/resources/assets/fonts/Cairo/Cairo-Black.woff2"
+  },
+  "modules/Frontend/resources/assets/fonts/Cairo/Cairo-Bold.woff2": {
+    "file": "assets/Cairo-Bold-DeF2VI18.woff2",
+    "src": "modules/Frontend/resources/assets/fonts/Cairo/Cairo-Bold.woff2"
+  },
+  "modules/Frontend/resources/assets/fonts/Cairo/Cairo-ExtraBold.woff2": {
+    "file": "assets/Cairo-ExtraBold-BF5nEcc4.woff2",
+    "src": "modules/Frontend/resources/assets/fonts/Cairo/Cairo-ExtraBold.woff2"
+  },
+  "modules/Frontend/resources/assets/fonts/Cairo/Cairo-ExtraLight.woff2": {
+    "file": "assets/Cairo-ExtraLight-BgEIyzmG.woff2",
+    "src": "modules/Frontend/resources/assets/fonts/Cairo/Cairo-ExtraLight.woff2"
+  },
+  "modules/Frontend/resources/assets/fonts/Cairo/Cairo-Light.woff2": {
+    "file": "assets/Cairo-Light-DrRvSMop.woff2",
+    "src": "modules/Frontend/resources/assets/fonts/Cairo/Cairo-Light.woff2"
+  },
+  "modules/Frontend/resources/assets/fonts/Cairo/Cairo-Medium.woff2": {
+    "file": "assets/Cairo-Medium-CmG4Iecu.woff2",
+    "src": "modules/Frontend/resources/assets/fonts/Cairo/Cairo-Medium.woff2"
+  },
+  "modules/Frontend/resources/assets/fonts/Cairo/Cairo-Regular.woff2": {
+    "file": "assets/Cairo-Regular-B1QT0PLZ.woff2",
+    "src": "modules/Frontend/resources/assets/fonts/Cairo/Cairo-Regular.woff2"
+  },
+  "modules/Frontend/resources/assets/fonts/Cairo/Cairo-SemiBold.woff2": {
+    "file": "assets/Cairo-SemiBold-DXiAIXCG.woff2",
+    "src": "modules/Frontend/resources/assets/fonts/Cairo/Cairo-SemiBold.woff2"
+  },
+  "modules/Frontend/resources/assets/js/home.js": {
+    "file": "assets/home-D6SSKPlK.js",
+    "name": "home",
+    "src": "modules/Frontend/resources/assets/js/home.js",
+    "isEntry": true,
+    "imports": [
+      "_nav-BuPnHObe.js",
+      "_register-form-Cp9kZKV3.js",
+      "_jquery-BvxTx_lq.js"
+    ]
+  },
+  "modules/Frontend/resources/assets/js/inner.js": {
+    "file": "assets/inner-CHe0z3nV.js",
+    "name": "inner",
+    "src": "modules/Frontend/resources/assets/js/inner.js",
+    "isEntry": true,
+    "imports": [
+      "_nav-BuPnHObe.js",
+      "_jquery-BvxTx_lq.js"
+    ]
+  },
+  "modules/Frontend/resources/assets/js/jquery.js": {
+    "file": "assets/jquery-CKiq5A0I.js",
+    "name": "jquery",
+    "src": "modules/Frontend/resources/assets/js/jquery.js",
+    "isEntry": true,
+    "imports": [
+      "_jquery-BvxTx_lq.js"
+    ]
+  },
+  "modules/Frontend/resources/assets/js/register.js": {
+    "file": "assets/register-CWbHnZo_.js",
+    "name": "register",
+    "src": "modules/Frontend/resources/assets/js/register.js",
+    "isEntry": true,
+    "imports": [
+      "_nav-BuPnHObe.js",
+      "_register-form-Cp9kZKV3.js",
+      "_jquery-BvxTx_lq.js"
+    ]
+  }
+}

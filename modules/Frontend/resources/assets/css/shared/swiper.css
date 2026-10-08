@@ -1,0 +1,94 @@
+:root {
+    --swiper-pagination-bullet-width: 15px;
+    --swiper-pagination-bullet-height: 15px;
+    --swiper-pagination-bullet-inactive-color: var(--secondary-color);
+    --swiper-pagination-color: var(--primary-color);
+    --swiper-pagination-bullet-inactive-opacity: 0.5;
+    --swiper-pagination-bullet-border-radius: 50%;
+    --swiper-pagination-top: unset;
+    --swiper-pagination-bottom: 30px;
+    --swiper-navigation-sides-offset: 0;
+    --swiper-navigation-color: var(--white);
+}
+
+.swiper .swiper-slide {
+    height: auto !important;
+    display: flex !important;
+}
+
+.swiper-wrapper {
+    transition-timing-function: linear !important;
+    /*transition-duration: 0ms !important;*/
+}
+
+.swiper-pagination-bullet {
+    transition: all 0.3s ease-in-out;
+}
+
+.swiper-pagination:not(.main-slider-swiper-pagination) {
+    position: relative !important;
+    bottom: unset !important;
+    top: unset !important;
+    left: unset !important;
+    right: unset !important;
+    margin-top: 20px;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    width: 40px !important;
+    height: 40px !important;
+    border-radius: var(--border-radiusall) !important;
+    border: 2px solid var(--white) !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+    font-size: 16px !important;
+}
+
+/*rtl:ignore*/
+[dir="rtl"] .swiper-button-prev,
+[dir="rtl"] .swiper-rtl .swiper-button-next {
+    right: auto !important;
+    left: var(--swiper-navigation-sides-offset, 10px) !important;
+}
+
+/*rtl:ignore*/
+[dir="rtl"] .swiper-button-next,
+[dir="rtl"] .swiper-rtl .swiper-button-prev {
+    left: auto !important;
+    right: var(--swiper-navigation-sides-offset, 10px) !important;
+}
+
+/*story-swiper*/
+.story-swiper-pagination.swiper-pagination {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: var(--gutter-x) !important;
+    margin-bottom: 40px;
+}
+
+.story-swiper-pagination-bullet.swiper-pagination-bullet {
+    max-width: 25% !important;
+    width: 200px !important;
+    height: unset !important;
+    padding: 15px 20px !important;
+    border-radius: var(--border-radiusall) !important;
+}
+
+@media screen and (max-width: 767.98px) {
+    .story-swiper-pagination-bullet.swiper-pagination-bullet {
+        padding: 10px !important;
+    }
+}
+
+@media screen and (max-width: 575.98px) {
+    .story-swiper-pagination-bullet.swiper-pagination-bullet {
+        padding: 10px 5px !important;
+    }
+}

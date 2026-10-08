@@ -1,0 +1,193 @@
+/* =============================================
+   NAVBAR
+   ============================================= */
+#header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+    background: transparent;
+    transition:
+        background var(--transition),
+        box-shadow var(--transition);
+    height: var(--nav-h);
+    display: flex;
+    align-items: center;
+}
+
+#header.scrolled {
+    background: var(--teal-dark);
+    box-shadow: var(--nav-shadow);
+}
+
+.nav-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+}
+
+/* الشعار الرسمي العريض — يُعرض كاملاً بلا قص أو دوران */
+.nav-logo-img {
+    height: 40px;
+    width: auto;
+    max-width: 210px;
+    object-fit: contain;
+    display: block;
+}
+
+@media (max-width: 400px) {
+    .nav-logo-img {
+        height: 34px;
+        max-width: 165px;
+    }
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.nav-links a {
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: var(--white-link);
+    transition: color var(--transition);
+    position: relative;
+}
+
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    right: 0;
+    width: 0;
+    height: 2px;
+    background: var(--gold);
+    transition: width var(--transition);
+}
+
+.nav-links a:hover,
+.nav-links a:focus-visible {
+    color: var(--gold);
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+.nav-cta {
+    background: var(--gold);
+    color: var(--teal-dark) !important;
+    padding: 8px 18px;
+    border-radius: var(--radius-sm);
+    font-weight: 700;
+    font-size: 0.84rem;
+    white-space: nowrap;
+    transition:
+        background var(--transition),
+        transform var(--transition),
+        color var(--transition);
+}
+
+.nav-cta:hover,
+.nav-cta:focus-visible {
+    background: var(--gold-dark) !important;
+    transform: translateY(-1px);
+    color: var(--white) !important;
+}
+
+/* Hamburger */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    padding: 6px;
+}
+
+.hamburger span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: var(--white);
+    border-radius: 2px;
+    transition: all 0.3s;
+}
+
+.hamburger.open span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+}
+
+.hamburger.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.open span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+}
+
+.mobile-menu {
+    display: none;
+    position: fixed;
+    top: var(--nav-h);
+    right: 0;
+    left: 0;
+    background: var(--teal-dark);
+    z-index: 999;
+    flex-direction: column;
+    padding: 1.25rem 24px;
+    gap: 0.4rem;
+    border-top: var(--black-rgba);
+    box-shadow: var(--black-shadow-box);
+}
+
+.mobile-menu.open {
+    display: flex;
+}
+
+.mobile-menu a {
+    color: var(--white-link);
+    font-size: 0.98rem;
+    font-weight: 600;
+    padding: 0.7rem 0;
+    border-bottom: var(--black-rgba);
+    transition: color var(--transition);
+}
+
+.mobile-menu a:hover,
+.mobile-menu a:focus-visible {
+    color: var(--gold);
+}
+
+.mobile-menu .mobile-cta {
+    margin-top: 0.6rem;
+    background: var(--gold);
+    color: var(--teal-dark);
+    text-align: center;
+    border-radius: var(--radius-sm);
+    border-bottom: none;
+    font-weight: 800;
+}
+
+@media (max-width: 900px) {
+    .nav-links {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-cta-desktop {
+        display: none;
+    }
+}

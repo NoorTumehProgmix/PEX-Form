@@ -1,0 +1,106 @@
+/* =============================================
+   SPONSORS GALLERY (الرعاة)
+   ============================================= */
+.sponsorship {
+    padding: 90px 0;
+    background: var(--off-white);
+}
+
+.sponsors-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    /* align-items: start; */
+}
+
+.sponsor-cat {
+    border: 1px solid var(--gray-100);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    background: var(--white);
+}
+
+.sponsor-cat-head {
+    padding: 18px 20px;
+    text-align: center;
+}
+
+.sponsor-cat.diamond .sponsor-cat-head {
+    background: linear-gradient(135deg, #b9d6db 0%, #e7f1f3 100%);
+}
+
+.sponsor-cat.gold .sponsor-cat-head {
+    background: linear-gradient(135deg, #c9a961 0%, #edd9a3 100%);
+}
+
+.sponsor-cat.silver .sponsor-cat-head {
+    background: linear-gradient(135deg, #9eb3b8 0%, #d0dde0 100%);
+}
+
+.sponsor-cat-name {
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: var(--teal-dark);
+}
+
+.sponsor-cat-body {
+    padding: 28px 20px;
+    min-height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sponsor-soon {
+    color: var(--gray-500);
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.sponsor-logos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+    width: 100%;
+}
+
+.sponsor-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+}
+
+.sponsor-logo img {
+    max-width: 100%;
+    max-height: 70px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    display: block;
+}
+
+.sponsor-logo-name {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--gray-700);
+    text-align: center;
+}
+
+a.sponsor-logo {
+    transition: transform var(--transition);
+}
+
+a.sponsor-logo:hover,
+a.sponsor-logo:focus-visible {
+    transform: translateY(-3px);
+}
+
+@media (max-width: 760px) {
+    .sponsors-gallery {
+        grid-template-columns: 1fr;
+    }
+}
